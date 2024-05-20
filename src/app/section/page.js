@@ -27,18 +27,20 @@ export default function Page() {
     },
   };
   return (
-    <section className="bg-gradient-to-b from-[#5a7b78] to-[#95c4dc]">
+    <section className="bg-gradient-to-b from-[#a2b5d5] to-[#dadad8]">
       <div className="w-full relative">
-        <img src="/masjid-istiqlal.webp" alt="Masjid Istiqlal" className="w-full relative sm:h-[500px] object-cover object-center " />
-        <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-5xl text-center text-3xl font-bold leading-snug text-white lg:text-4xl xl:text-5xl absolute top-1/2 left-1/2 -translate-x-1/2">
+        <img src="/istiqlal.webp" alt="Masjid Istiqlal" className="w-full relative sm:h-[500px] object-cover object-center " />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/55"></div>
+        <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-5xl text-center text-3xl font-bold leading-snug text-white lg:text-4xl xl:text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           Masjid Penuh Simbol
         </motion.h2>
       </div>
-      <motion.div variants={variants} initial="hidden" animate="show" className="mx-auto max-w-[65ch] py-10 flex flex-col gap-5 ">
+      <motion.div variants={variants} initial="hidden" animate="show" className="mx-auto max-w-[65ch] py-8 flex flex-col gap-5 px-4">
         <motion.p variants={paragraphs}>
           Jika kawan GNFI datang ke Masjid Istiqlal, tidak banyak hiasan atau ornamen yang terlihat sehingga suasana yang dihasilkan cenderung lebih clean. Di bagian mihrab atau tempat imam terdapat kiswah, yakni bekas kain penutup ka’bah
           yang merupakan hadiah dari Raja Arab Saudi.
         </motion.p>
+        <motion.img initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.75, ease: "easeOut" }} src="/ragam-simbol-masjid.webp" alt="gambar-ragam-simbol-masjid" />
         <motion.p variants={paragraphs}>
           Masjid Istiqlal mengadopsi konsep bangunan tropis dengan tidak menggunakan jendela atau pintu sehingga udara dapat bebas masuk ke dalam masjid. Konsep itu digunakan untuk menciptakan kesan sejuk secara alami sehingga meminimalisir
           penggunaan AC.
@@ -52,8 +54,13 @@ export default function Page() {
         </motion.p>
         <motion.p variants={paragraphs}>
           Masjid Istiqlal tersusun dalam lima lantai yang merupakan lambang dari Rukun Islam. Lima lantai masjid juga merujuk pada Dasar Negara Republik Indonesia, yakni Pancasila. Kelima lantai tersebut disangga oleh tiang-tiang dengan
-          berbagai ukuran. Tiang berukuran kecil berjumlah sekitar 4 ribu, sedangkan tiang yang berukuran besar berjumlah 12 buah. Angka 12 tersebut merujuk pada tanggal lahir Nabi Muhammad SAW, yakni 12 Rabiul Awwal.
+          berbagai ukuran.
         </motion.p>
+        <motion.img initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.75, ease: "easeOut" }} src="/lima-lantai.webp" alt="gambar-masjid-lima-lantai" />
+        <motion.p variants={paragraphs}>
+          Tiang berukuran kecil berjumlah sekitar 4 ribu, sedangkan tiang yang berukuran besar berjumlah 12 buah. Angka 12 tersebut merujuk pada tanggal lahir Nabi Muhammad SAW, yakni 12 Rabiul Awwal.
+        </motion.p>
+        <motion.img initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.75, ease: "easeOut" }} src="/tiang-raksasa.webp" alt="gambar-tiang-raksasa" />
         <motion.p variants={paragraphs}>
           Dari luar, Masjid Istiqlal juga terlihat kubah besar di bagian atas bangunan. Itu adalah kubah utama dengan diameter 45 meter yang merujuk pada tahun kemerdekaan Republik Indonesia, yakni 1945. Selain itu, Masjid Istiqlal juga
           memiliki kubah kedua yang berdiameter 8 meter. Angka tersebut menunjukkan bahwa Kemerdekaan Indonesia tepat pada bulan ke-8, yakni Agustus. Di atas kubah utama terdapat simbol bulan bintang dengan ketinggian 17 meter yang merujuk
@@ -64,6 +71,7 @@ export default function Page() {
           Masjid Istiqlal berfungsi sebagai cahaya penunjuk jalan. Di bagian puncak menara terdapat besi anti petir dengan ketinggian 30 meter yang merujuk pada jumlah juz dalam Al Qur’an.
         </motion.p>
         <motion.p variants={paragraphs}>Jika ditotal, menara Masjid Istiqlal memiliki ketinggian 114 meter yang menyimbolkan jumlah surat dalam Al Qur’an.</motion.p>
+        <motion.img initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.75, ease: "easeOut" }} src="/info.webp" alt="gambar-info" />
       </motion.div>
     </section>
   );
