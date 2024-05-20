@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <section className="bg-gradient-to-b from-[#a2b5d5] to-[#dadad8]">
       <div className="w-full relative">
-        <img src="/istiqlal.webp" alt="Masjid Istiqlal" className="w-full relative sm:h-[500px] object-cover object-center " />
+        <img src="/istiqlal.webp" alt="Masjid Istiqlal" className="w-full h-screen relative sm:h-[500px] object-cover object-center " />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/55"></div>
         <motion.h2
           initial={{ opacity: 0 }}
