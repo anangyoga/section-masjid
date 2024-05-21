@@ -60,7 +60,7 @@ export default function Page() {
             <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="relative">
               <img src="/tiang.webp" alt="tiang raksasa" className="relative w-full h-auto opacity-85" />
               <div className="absolute bottom-0 bg-white w-full p-1">
-                <p className="text-lg font-semibold">
+                <p className="text-sm sm:text-lg font-semibold">
                   12 Tiang Raksasa - <span className="font-thin text-sm">Tanggal Lahir Nabi Muhammad SAW, 12 Rabiul Awwal</span>
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function Page() {
             <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="relative">
               <img src="/lima-lantai.webp" alt="lima lantai" className="relative w-full h-auto opacity-85" />
               <div className="absolute bottom-0 bg-white w-full p-1">
-                <p className="text-lg font-semibold">
+                <p className="text-sm sm:text-lg font-semibold">
                   Lima lantai - <span className="font-thin text-sm">Rukun Islam dan Pancasila</span>
                 </p>
               </div>
@@ -76,7 +76,7 @@ export default function Page() {
             <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="relative">
               <img src="/kubah-masjid.webp" alt="kubah masjid" className="relative w-full h-auto opacity-85" />
               <div className="absolute bottom-0 bg-white w-full p-1">
-                <p className="text-lg font-semibold">
+                <p className="text-sm sm:text-lg font-semibold">
                   Kubah berdiameter 45 dan 8 meter, plus simbol bulan bintang setinggi 17 meter - <span className="font-thin text-sm">Tanggal Kemerdekaan Indonesia, 17 Agustus 1945</span>
                 </p>
               </div>
